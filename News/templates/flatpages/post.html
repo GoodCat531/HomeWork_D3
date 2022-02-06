@@ -15,6 +15,9 @@ Post
                 Заголовок
             </td>
             <td>
+                Автор
+            </td>
+            <td>
                 Дата публикации
             </td>
             <td>
@@ -28,6 +31,9 @@ Post
         <tr>
             <td>
                 {{ post.title|censor }}
+            </td>
+            <td>
+                {{ post.author.authorUser }}
             </td>
             <td>
                 {{ post.dateCreation|date:'d-M-Y H:m' }}
